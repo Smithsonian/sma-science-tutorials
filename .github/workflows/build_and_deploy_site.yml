@@ -1,9 +1,13 @@
 name: Github Pages
 
 on:
+  pull_request:
   push:
     branches:
       - main
+  # cron:
+    # run every Tuesday at 5am UTC
+    # - cron: '0 5 * * 2'
 
 jobs:
   build:
